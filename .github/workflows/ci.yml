@@ -284,7 +284,7 @@ jobs:
       should_run: ${{ steps.dependency-files.outputs.should_run }}
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           # A pull_request checkout is GitHub's merge commit; its first parent is
           # the base commit the PR was merged onto, so depth 2 is enough to diff
